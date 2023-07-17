@@ -1,0 +1,9 @@
+run the code on the cluster from here
+
+gcloud dataproc jobs submit pyspark [python file.py] --cluster="clustername" --region="region" --jars=gs://spark-lib-bigquery-latest.jar
+gcloud dataproc jobs submit pyspark wordcout.py --cluster="cluster-d9a4" --region="us-central1" --jars=gs://spark-lib-bigquery-latest.jar
+
+
+
+
+I'm pulling the terraform from here: https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/dataproc_cluster
